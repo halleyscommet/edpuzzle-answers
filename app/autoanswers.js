@@ -60,6 +60,7 @@ function skipVideo(csrf, attempt) {
     
     for (let i=0; i<document.questions.length; i++) {
       let question = document.questions[i];
+      console.log(question)
       if (question.type != "multiple-choice") {
         console.log("Skipping question of type: " + question.type);
         continue;
